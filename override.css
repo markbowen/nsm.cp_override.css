@@ -936,14 +936,13 @@ div#templateGroups{width:30%;}
 #publish_tab .publish_checkbox legend{
 	line-height:1.2;
 }
-
 .publish_field .hide_field{
 	cursor: pointer;
 	float: left;
 	padding-right: 25px;
-	_padding-top: 8px;
-	text-align: right;
-	width: 125px;
+	padding-top: 1px;
+	padding-left: 5px;
+	width: 120px;
 }
 .publish_field .hide_field span{
 	text-shadow:0 1px 0 #fff;
@@ -959,6 +958,15 @@ div#templateGroups{width:30%;}
 }
 .publish_field > div {
 	margin-left: 150px;
+}
+@media all and (max-width: 960px) {
+	.publish_field .hide_field{
+		float:none;
+	}
+	.publish_field > div {
+		margin-top: 5px;
+		margin-left: 5px;
+	}
 }
 .publish_field fieldset.holder{
 	_margin-top:5px;
