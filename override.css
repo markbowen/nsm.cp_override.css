@@ -857,7 +857,13 @@ div#templateGroups{width:30%;}
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
 }
-.publish_field .hide_field{}
+.publish_field .hide_field{
+	float: left;
+	padding-right: 25px !important;
+	padding-top: 8px !important;
+	text-align: right;
+	width: 125px;
+}
 .publish_field fieldset.holder{
 	margin-top:5px;
 }
