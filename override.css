@@ -925,37 +925,53 @@ div#templateGroups{width:30%;}
 	border-left:1px dotted #c5ced4;
 	margin-left:-1px;
 	padding:9px 18px;
+	position:relative;
 	height: auto !important;
 	-moz-box-sizing:border-box;
 	-moz-box-shadow:inset 0 1px 0 #fff;
 	-webkit-box-sizing:border-box;
 	-webkit-box-shadow:inset 0 1px 0 #fff;
 }
-
-.publish_field span{
-	text-shadow:0 1px 0 #fff;
+.publish_field label,
+#publish_tab .publish_checkbox legend{
+	line-height:1.2;
 }
+
 .publish_field .hide_field{
+	cursor: pointer;
 	float: left;
 	padding-right: 25px;
-	padding-top: 8px;
+	_padding-top: 8px;
 	text-align: right;
 	width: 125px;
+}
+.publish_field .hide_field span{
+	text-shadow:0 1px 0 #fff;
+}
+.publish_field .hide_field span img{
+	opacity:.3;
+	position:absolute;
+	top:9px;
+	left:8px;
+}
+.publish_field .hide_field:hover span img{
+	opacity:1;
 }
 .publish_field > div {
 	margin-left: 150px;
 }
 .publish_field fieldset.holder{
-	margin-top:5px;
+	_margin-top:5px;
 }
 .instruction_text{margin-bottom:0;}
 .instruction_text p{margin:5px 0 9px 0;}
 .instruction_text p:first-child{margin-left:-3px;}
 .instruction_text p:first-child > strong:first-child{display:none;}
-.publish_text input{
+.publish_text input,
+.publish_textarea textarea{
 	margin:0;
+	width:95%;
 }
-
 .publish_field.ui-sortable-placeholder{
 	visibility: visible !important;
 	margin:9px 9px 9px -18px;
@@ -977,7 +993,7 @@ div#templateGroups{width:30%;}
 	position:absolute;
 	top:5px;
 	bottom:5px;
-	left:-3px;
+	left:-154px;
 }
 
 /* Tools */
