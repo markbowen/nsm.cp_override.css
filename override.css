@@ -859,10 +859,13 @@ div#templateGroups{width:30%;}
 }
 .publish_field .hide_field{
 	float: left;
-	padding-right: 25px !important;
-	padding-top: 8px !important;
+	padding-right: 25px;
+	padding-top: 8px;
 	text-align: right;
 	width: 125px;
+}
+.publish_field > div {
+	margin-left: 150px;
 }
 .publish_field fieldset.holder{
 	margin-top:5px;
