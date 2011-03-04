@@ -451,7 +451,9 @@ button.submit,
 	margin:0;
 	padding:0;
 }
-.cp_button{margin:9px 0;}
+.cp_button{
+	margin:9px 9px 9px 0;
+}
 #mainContent .formArea .formHeading .newTemplate{
 	margin:-3px 0 0 7px!important;
 }
@@ -511,11 +513,12 @@ button.submit,
 	border-color:#980031;
 	_text-shadow:0 -1px 0 rgba(0,0,0,.4);
 }
+
+.rightNav{}
 .rightNav .button{
 	margin-left:7px;
+	margin-bottom:0;
 }
-
-
 /**
  * Tables
  */
@@ -531,6 +534,7 @@ table.mainTable th,
 
 
 #mainContent .pageContents table{margin:18px 0;}
+#mainContent .pageContents table table{margin:0;}
 fieldset table{border:none !important;}
 
 tbody tr:nth-child(2n){
@@ -747,6 +751,7 @@ div#templateGroups{width:30%;}
 #mainContent .editAccordion h3{
 	background-color:transparent !important;
 	color:inherit!important;
+	margin:0;
 	text-shadow:none;
 }
 #mainContent .editAccordion div{
@@ -956,7 +961,7 @@ div#templateGroups{width:30%;}
 	background-image: -moz-linear-gradient(top, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 100%); /* firefox */
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.1)), color-stop(100%,rgba(255,255,255,0))); /* webkit */
 	font-size:12px;
-    margin-left:0;
+    margin:0;
     padding:0;
 	border:none!important;
 }
@@ -1031,8 +1036,8 @@ div#templateGroups{width:30%;}
 #revealSidebarLink{
 	background:none;
 	color:#fff;
-	font-size:11px;
-	margin:5px 0;
+	font-size:9px;
+	margin:5px 0 0 0;
 	text-transform:uppercase;
 }
 
@@ -1098,3 +1103,8 @@ div#templateGroups{width:30%;}
 #accessoryTabs li.current a{border:none; padding-top:4px;}
 #accessoryTabs li.current a:link{text-shadow:0 -1px 0 rgb(0,0,0);}
 #accessoryTabs li a span{display:none;}
+
+
+/**
+ * Freeform
+ */
