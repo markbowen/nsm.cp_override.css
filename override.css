@@ -766,16 +766,16 @@ div#templateGroups{width:30%;}
  * Accordians
  */
 #mainContent h3.accordion{
-	background:#9aa9b3;
-	border:0;
-	border-top:1px solid #6e8492;
-	border-bottom:1px solid #6e8492;
-	margin:0;
-	margin-bottom:-1px;
+	background: #9aa9b3 -moz-linear-gradient(top, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 100%); /* firefox */
+	background: #9aa9b3 -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.1)), color-stop(100%,rgba(255,255,255,0))); /* webkit */
+	border:1px solid rgba(0,0,0,.2);
+	margin:0 0 -1px 0;
 	padding-top:5px;
 	padding-bottom:5px;
-	text-shadow:none;
+	text-shadow:0 -1px 0 rgba(0,0,0,.3);
+	-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.3);
 }
+
 #mainContent h3.accordion.ui-state-active{
 	margin-top:9px;
 }
@@ -970,11 +970,16 @@ div#templateGroups{width:30%;}
 #mainContent div#file_manager_tools h3 a,
 #mainContent div#tools h3 a.closed,
 #mainContent div#file_manager_tools h3 a.closed{
-	border-top:1px solid rgba(255,255,255,.3);
-	border-bottom:1px solid rgba(0,0,0,.3);
-	padding:0 9px 0 22px;
+	background: #9aa9b3 -moz-linear-gradient(top, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 100%); /* firefox */
+	background: #9aa9b3 -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.1)), color-stop(100%,rgba(255,255,255,0))); /* webkit */
+	border:1px solid rgba(0,0,0,.2);
 	font-weight:bold;
+	margin:-1px 0;
+	padding:0 9px 0 22px;
 	text-shadow:0 -1px 0 rgba(0,0,0,.3);
+	-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.3);
+
+
 }
 
 #mainContent div#tools h3 a,
