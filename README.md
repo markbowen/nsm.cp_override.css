@@ -8,13 +8,13 @@ NSM overide.css is a css file and a couple of images that aims to improve the de
 
 Here are the colours in use:
 
-* #21282c - Dark Blue
-* #566671 - Dark / Medium Blue
-* #6b8492 - Dark / Medium Blue (borders)
-* #9aa9b3 - Medium Blue
-* #c5ced4 - Medium / Light Blue (Borders)
-* #ecf1f4 - Light Blue
-* #c21148 - Pink
+* \#21282c - Dark Blue
+* \#566671 - Dark / Medium Blue
+* \#6b8492 - Dark / Medium Blue (borders)
+* \#9aa9b3 - Medium Blue
+* \#c5ced4 - Medium / Light Blue (Borders)
+* \#ecf1f4 - Light Blue
+* \#c21148 - Pink
 
 ## Commercial License Agreement
 
