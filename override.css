@@ -406,7 +406,7 @@ h2{font-size:18px;}
 	#activeUser .userName{
 		float:inline-block;
 		font-size:11px;
-		margin:0 0 0 25px;
+		margin:0 0 0 18px;
 	}
 	#activeUser .logOutButton{
 		display:inline-block;
@@ -439,6 +439,7 @@ button.submit,
 #mainContent .formArea .formHeading .newTemplate{
 	margin:-3px 0 0 7px!important;
 }
+
 input.submit,
 button.submit,
 #mainContent .submit_alt,
@@ -469,7 +470,6 @@ button.submit,
 	background: #ecf1f4 -moz-linear-gradient(top, rgba(255,255,255,.7) 0%, rgba(255,255,255,0) 100%)  !important; /* firefox */
 	background: #ecf1f4 -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.7)), color-stop(100%,rgba(255,255,255,0))) !important; /* webkit */
 	margin-top: 7px;
-	text-shadow:none;
 }
 
 #mainContent .formArea .formHeading .newTemplate{
@@ -493,7 +493,7 @@ button.submit,
 	background: #d91350 -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.15)), color-stop(100%,rgba(255,255,255,0))); /* webkit */
 	color:#fff;
 	border-color:#980031;
-	text-shadow:0 -1px 0 rgba(0,0,0,.4);
+	_text-shadow:0 -1px 0 rgba(0,0,0,.4);
 }
 .rightNav .button{
 	margin-left:7px;
@@ -873,22 +873,6 @@ div#templateGroups{width:30%;}
 	-webkit-box-shadow:inset 0 1px 0 rgba(0,0,0,.2);
 }
 
-#mainContent #showToolbarLink{
-	background:none!important; 
-	font-size:9px; 
-	position:absolute; 
-	top:10px; 
-	right:40px; 
-	margin-right:0!important;
-}
-#mainContent #showToolbarLink a{
-	color:#fff;
-	text-transform:uppercase;
-}
-#mainContent #showToolbarLink img{
-	display:none !important;
-}
-
 /* Custom fields */
 .publish_field,
 .publish_field .hide_field,
@@ -967,14 +951,49 @@ div#templateGroups{width:30%;}
 #mainContent div#file_manager_tools h3 a.closed{
 	border-top:1px solid rgba(255,255,255,.3);
 	border-bottom:1px solid rgba(0,0,0,.3);
-	background:none!important;
-	padding:0 9px;
+	padding:0 9px 0 22px;
 	font-weight:bold;
 	text-shadow:0 -1px 0 rgba(0,0,0,.3);
 }
 
+#mainContent div#tools h3 a,
+#mainContent div#file_manager_tools h3 a{
+	background: url('../images/override/open-white.png') no-repeat 9px 50% !important;
+}
+
+#mainContent div#tools h3 a.closed,
+#mainContent div#file_manager_tools h3 a.closed{
+	background: url('../images/override/closed-white.png') no-repeat 12px 50% !important;
+}
+
+
 #mainContent div#tools h3:first-child a,
 #mainContent div#file_manager_tools h3:first-child a{}
+
+#mainContent #showToolbarLink{
+	background: transparent -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,.1) 100%); /* firefox */
+	background: transparent -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,.1))); /* webkit */
+	border:1px solid rgba(0,0,0,.2);
+	color:#fff;
+	font-size:11px;
+	height:auto;
+	padding:2px 13px;
+	font-size:9px; 
+	position:absolute; 
+	top:7px; 
+	right:40px; 
+	margin-right:0!important;
+	-webkit-box-shadow: none;
+	-webkit-border-radius:20px;
+}
+#mainContent #showToolbarLink a{
+	color:#fff;
+	text-transform:uppercase;
+}
+#mainContent #showToolbarLink img{
+	display:none !important;
+}
+
 
 /** 
  * Sidebar
@@ -989,13 +1008,20 @@ div#templateGroups{width:30%;}
 	margin-top:18px;
 	padding-top:9px;
 }
+#sidebarControl{
+	padding:0;
+}
 #hideSidebarLink,
 #revealSidebarLink{
 	background:none;
+	color:#fff;
+	font-size:11px;
 	margin:5px 0;
 	text-transform:uppercase;
-	padding:3px 10px;
 }
+
+
+
 #notePad #notePadTextEdit{
 	width:90%;
 	-moz-box-sizing:border-box;
