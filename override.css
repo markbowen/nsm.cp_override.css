@@ -159,6 +159,10 @@ button.submit,
 	background-image: -moz-linear-gradient(top, rgba(255,255,255,.3) 0%, rgba(255,255,255,0) 100%); /* firefox */
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.3)), color-stop(100%,rgba(255,255,255,0))); /* webkit */
 }
+#mainContent .pageContents .pageContents{
+	border:none !important;
+	padding:0 !important;
+}
 
 #mainContent .publishPageContents .main_tab,
 #holder {
