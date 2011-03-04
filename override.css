@@ -827,8 +827,8 @@ div#templateGroups{width:30%;}
     background: #9aa9b3;
 	background: #9aa9b3 -moz-linear-gradient(top, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 100%); /* firefox */
 	background: #9aa9b3 -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.1)), color-stop(100%,rgba(255,255,255,0))); /* webkit */
-    border-top:1px solid #e3e7ea;
-    border-bottom:1px solid #849099;
+    border-top:1px solid rgba(255,255,255,.5);
+	border-bottom:1px solid rgba(0,0,0,.3);
     height:auto;
     margin:0;
     padding:0 100px 0 5px;
@@ -953,26 +953,28 @@ div#templateGroups{width:30%;}
 #mainContent div#tools h3,
 #mainContent div#file_manager_tools h3{
     background:#9aa9b3;
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 100%); /* firefox */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.1)), color-stop(100%,rgba(255,255,255,0))); /* webkit */
 	font-size:12px;
     margin-left:0;
     padding:0;
-	border-bottom:0!important;
+	border:none!important;
 }
 #mainContent div#tools h3:first-child{}
 #mainContent div#tools h3 a,
 #mainContent div#file_manager_tools h3 a,
 #mainContent div#tools h3 a.closed,
 #mainContent div#file_manager_tools h3 a.closed{
-	border-bottom:1px solid rgba(0,0,0,.2);
+	border-top:1px solid rgba(255,255,255,.3);
+	border-bottom:1px solid rgba(0,0,0,.3);
 	background:none!important;
 	padding:0 9px;
 	font-weight:bold;
 	text-shadow:0 -1px 0 rgba(0,0,0,.3);
-	-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.4);
 }
 
 #mainContent div#tools h3:first-child a,
-#mainContent div#file_manager_tools h3:first-child a{border-top:0;}
+#mainContent div#file_manager_tools h3:first-child a{}
 
 /** 
  * Sidebar
