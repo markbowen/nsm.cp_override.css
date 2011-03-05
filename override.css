@@ -53,12 +53,9 @@ fieldset{margin:18px 0;}
 .pageContents,
 #mainContent #filterMenu,
 #mainContent table.mainTable,
-#templateGroups .groupList{
-}
+#templateGroups .groupList{}
 
-.pageContents label{
-	_font-weight:normal;
-}
+
 #mainContent .pageContents p{
 	margin:9px 0;
 }
@@ -70,7 +67,6 @@ fieldset{margin:18px 0;}
 /**
  * First remove all the rounded corners, starting from the top.
  */
-
 .button a, 
 .cp_button a, 
 #search form, 
@@ -933,10 +929,10 @@ div#templateGroups{width:30%;}
 }
 
 .publish_field .hide_field{
-	cursor:pointer;
 	position:relative;
 }
 .publish_field .hide_field span{
+	cursor:pointer;
 	text-shadow:0 1px 0 #fff;
 }
 .publish_field .hide_field span img{
@@ -945,7 +941,7 @@ div#templateGroups{width:30%;}
 	top:1px;
 	left:-14px;
 }
-.publish_field .hide_field:hover span img{
+.publish_field .hide_field span:hover img{
 	opacity:1;
 }
 
@@ -1150,8 +1146,3 @@ div#templateGroups{width:30%;}
 #accessoryTabs li a span{
 	display:none;
 }
-
-
-/**
- * Freeform
- */
