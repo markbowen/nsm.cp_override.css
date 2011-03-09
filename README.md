@@ -1,3 +1,5 @@
+I'm considering selling this override.css when officially released to ensure continued report. I'm thinking of a one off fee which covers multiple installations. Thoughts?
+
 # NSM override override.css
 
 NSM overide.css is a css file and a couple of images that aims to improve the default control panel theme.
