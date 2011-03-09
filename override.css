@@ -1171,3 +1171,15 @@ div#templateGroups{width:30%;}
 #accessoryTabs li a span{
 	display:none;
 }
+#navigationTabs li.parent:hover ul,
+#navigationTabs li.parent:hover li:hover ul,
+#navigationTabs li.parent:hover li:hover ul li:hover ul,
+#navigationTabs li.parent:hover li:hover ul li:hover ul li:hover ul{
+    display:block;
+}
+
+#navigationTabs li.parent:hover ul ul,
+#navigationTabs li.parent:hover li:hover ul ul,
+#navigationTabs li.parent:hover li:hover ul li:hover ul ul{
+    display: none;
+}
